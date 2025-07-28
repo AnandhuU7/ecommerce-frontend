@@ -26,19 +26,15 @@ const LoginPage = () => {
     setError('');
 
     try {
-      // Replace with your actual API endpoint
       const response = await axios.post('https://ecommerce-backend-fzst.onrender.com/api/admin/login', {
         email: formData.email,
         password: formData.password
       });
 
-      // Assuming the API returns a token upon successful login
       const { token } = response.data;
       
-      // Store the token in localStorage or cookies
       localStorage.setItem('authToken', token);
       
-      // Redirect to admin dashboard
       navigate('/dashboard');
     } catch (err) {
       setError(err.response?.data?.message || 'Login failed. Please try again.');

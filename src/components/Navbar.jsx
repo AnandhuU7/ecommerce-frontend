@@ -8,11 +8,9 @@ const Navbar = () => {
     };
     return (
         <div className="w-full">
-            {/* Desktop Header */}
             <header className="hidden md:block bg-white border-b border-gray-200">
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="flex items-center justify-between h-16">
-                        {/* Logo */}
                         <div className="flex items-center space-x-2">
                             <div className="w-6 h-6 bg-red-500 rounded flex items-center justify-center">
                                 <div className="w-3 h-3 bg-white rounded-sm"></div>
@@ -20,7 +18,7 @@ const Navbar = () => {
                             <span className="text-xl font-semibold text-gray-900">care mall</span>
                         </div>
 
-                        {/* Navigation */}
+
                         <nav className="flex items-center space-x-8">
                             <div className="flex items-center space-x-1 text-gray-700 hover:text-red-500 cursor-pointer">
                                 <span>Categories</span>
@@ -31,7 +29,7 @@ const Navbar = () => {
                             <a href="#" className="text-red-500 font-medium">Become a seller</a>
                         </nav>
 
-                        {/* Search Bar */}
+
                         <div className="flex-1 max-w-md mx-8">
                             <div className="relative">
                                 <input
@@ -43,7 +41,7 @@ const Navbar = () => {
                             </div>
                         </div>
 
-                        {/* Right Icons */}
+
                         <div className="flex items-center space-x-4">
                             <Globe className="w-5 h-5 text-gray-600 hover:text-red-500 cursor-pointer" />
                             <div className="relative">
@@ -54,7 +52,7 @@ const Navbar = () => {
                             </div>
                             <User
                                 className="w-5 h-5 text-gray-600 hover:text-red-500 cursor-pointer"
-                                onClick={handleUserClick}  // Only added this onClick handler
+                                onClick={handleUserClick}  
                             />
                         </div>
                     </div>

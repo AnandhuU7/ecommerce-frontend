@@ -11,7 +11,7 @@ const BrandsContent = ({
   setBrands,
   API_BASE_URL,
   authToken,
-  refreshBrands // <-- add this
+  refreshBrands 
 }) => {
   const [showBrandModal, setShowBrandModal] = useState(false);
   const [editingBrand, setEditingBrand] = useState(null);
@@ -96,15 +96,15 @@ const BrandsContent = ({
           editingItem={editingBrand}
           setEditingItem={setEditingBrand}
           loading={loading}
-          setLoading={() => {}} // Optionally pass setLoading
+          setLoading={() => {}} 
           error={error}
-          setError={() => {}} // Optionally pass setError
+          setError={() => {}} 
           closeModal={closeBrandModal}
           categories={categories}
           setBrands={setBrands}
           API_BASE_URL={API_BASE_URL}
           authToken={authToken}
-          refreshBrands={refreshBrands} // <-- add this
+          refreshBrands={refreshBrands} 
         />
       )}
     </div>
