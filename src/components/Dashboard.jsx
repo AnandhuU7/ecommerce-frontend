@@ -22,7 +22,7 @@ const Dashboard = () => {
   const [categories, setCategories] = useState([]);
   const [brands, setBrands] = useState([]);
 
-  const API_BASE_URL = 'http://localhost:5000/api';
+  const API_BASE_URL = 'https://ecommerce-backend-fzst.onrender.com/api';
   const authToken = localStorage.getItem('authToken');
   const navigate = useNavigate();
 
